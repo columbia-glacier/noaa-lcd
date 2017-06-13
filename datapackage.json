@@ -1,0 +1,155 @@
+{
+  "name": "noaa-lcd",
+  "title": "NOAA Local Climatological Data (LCD)",
+  "description": "Meteorological observations from nearby airport weather stations.",
+  "version": "0.1.0",
+  "contributors": [
+    {
+      "name": "Ethan Welty",
+      "email": "ethan.welty@gmail.com",
+      "roles": "Assembled and published the datapackage."
+    }
+  ],
+  "sources": [
+    {
+      "name": "NOAA Data Tools: Local Climatological Data (LCD)",
+      "web": "https://www.ncdc.noaa.gov/cdo-web/datatools/lcd"
+    }
+  ],
+  "resources": [
+    {
+      "name": "stations",
+      "title": "Station Metadata",
+      "path": "data/stations.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Station identifier."
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Station name."
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "Longitude in decimal degrees (unknown datum)."
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "Latitude in decimal degrees (unknown datum)."
+          },
+          {
+            "name": "elevation",
+            "type": "number",
+            "description": "Elevation (m) above sea level (unknown datum)."
+          }
+        ]
+      }
+    },
+    {
+      "name": "WBAN26442",
+      "title": "Valdez Weather Service Office (WBAN:26442)",
+      "path": "data/WBAN26442.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "t",
+            "type": "datetime",
+            "description": "Date and time (UTC).",
+            "format": "YYYY-MM-DD'T'hh:mm'Z'"
+          },
+          {
+            "name": "air_temperature",
+            "type": "number",
+            "description": "Air temperature (°C)."
+          },
+          {
+            "name": "dew_point",
+            "type": "number",
+            "description": "Dew point temperature (°C)."
+          },
+          {
+            "name": "relative_humidity",
+            "type": "integer",
+            "description": "Relative humidity (%)."
+          },
+          {
+            "name": "wind_speed",
+            "type": "number",
+            "description": "Wind speed (m/s)."
+          },
+          {
+            "name": "wind_direction",
+            "type": "number",
+            "description": "Wind direction (direction of travel in radians counterclockwise from east)."
+          },
+          {
+            "name": "air_pressure",
+            "type": "number",
+            "description": "Atmospheric pressure (Pa)."
+          },
+          {
+            "name": "precipitation",
+            "type": "number",
+            "description": "Total precipitation (m) over the past hour."
+          }
+        ]
+      }
+    },
+    {
+      "name": "WBAN26479",
+      "title": "Valdez Municipal Airport (WBAN:26479)",
+      "path": "data/WBAN26479.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "t",
+            "type": "datetime",
+            "description": "Date and time (UTC).",
+            "format": "YYYY-MM-DD'T'hh:mm'Z'"
+          },
+          {
+            "name": "air_temperature",
+            "type": "number",
+            "description": "Air temperature (°C)."
+          },
+          {
+            "name": "dew_point",
+            "type": "number",
+            "description": "Dew point temperature (°C)."
+          },
+          {
+            "name": "relative_humidity",
+            "type": "integer",
+            "description": "Relative humidity (%)."
+          },
+          {
+            "name": "wind_speed",
+            "type": "number",
+            "description": "Wind speed (m/s)."
+          },
+          {
+            "name": "wind_direction",
+            "type": "number",
+            "description": "Wind direction (direction of travel in radians counterclockwise from east)."
+          },
+          {
+            "name": "air_pressure",
+            "type": "number",
+            "description": "Atmospheric pressure (Pa)."
+          },
+          {
+            "name": "precipitation",
+            "type": "number",
+            "description": "Total precipitation (m) over the past hour."
+          }
+        ]
+      }
+    }
+  ]
+}
