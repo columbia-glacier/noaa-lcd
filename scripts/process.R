@@ -5,7 +5,6 @@ if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(packages, rownames(installed.packages())))
 }
 library(magrittr)
-library(units)
 
 # ---- Load functions ----
 

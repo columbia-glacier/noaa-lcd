@@ -5,15 +5,15 @@
   "version": "0.1.0",
   "contributors": [
     {
-      "name": "Ethan Welty",
+      "title": "Ethan Welty",
       "email": "ethan.welty@gmail.com",
-      "roles": "Assembled and published the datapackage."
+      "role": "author"
     }
   ],
   "sources": [
     {
-      "name": "NOAA Data Tools: Local Climatological Data (LCD)",
-      "web": "https://www.ncdc.noaa.gov/cdo-web/datatools/lcd"
+      "title": "NOAA Data Tools: Local Climatological Data (LCD)",
+      "author": "https://www.ncdc.noaa.gov/cdo-web/datatools/lcd"
     }
   ],
   "resources": [
@@ -26,27 +26,30 @@
           {
             "name": "id",
             "type": "string",
-            "description": "Station identifier."
+            "description": "Station identifier"
           },
           {
             "name": "name",
             "type": "string",
-            "description": "Station name."
+            "description": "Station name"
           },
           {
             "name": "longitude",
             "type": "number",
-            "description": "Longitude in decimal degrees (unknown datum)."
+            "description": "Longitude (unknown datum)",
+            "unit": "°"
           },
           {
             "name": "latitude",
             "type": "number",
-            "description": "Latitude in decimal degrees (unknown datum)."
+            "description": "Latitude (unknown datum)",
+            "unit": "°"
           },
           {
             "name": "elevation",
             "type": "number",
-            "description": "Elevation (m) above sea level (unknown datum)."
+            "description": "Elevation above sea level (unknown datum)",
+            "unit": "m"
           }
         ]
       }
@@ -60,43 +63,50 @@
           {
             "name": "t",
             "type": "datetime",
-            "description": "Date and time (UTC).",
-            "format": "YYYY-MM-DD'T'hh:mm'Z'"
+            "description": "Date and time (UTC)",
+            "format": "%Y-%m-%dT%H:%M:%SZ"
           },
           {
             "name": "air_temperature",
             "type": "number",
-            "description": "Air temperature (°C)."
+            "description": "Air temperature",
+            "unit": "°C"
           },
           {
             "name": "dew_point",
             "type": "number",
-            "description": "Dew point temperature (°C)."
+            "description": "Dew point temperature",
+            "unit": "°C"
           },
           {
             "name": "relative_humidity",
             "type": "integer",
-            "description": "Relative humidity (%)."
+            "description": "Relative humidity",
+            "unit": "%"
           },
           {
             "name": "wind_speed",
             "type": "number",
-            "description": "Wind speed (m/s)."
+            "description": "Wind speed",
+            "unit": "m s-1"
           },
           {
             "name": "wind_direction",
             "type": "number",
-            "description": "Wind direction (direction of travel in radians counterclockwise from east)."
+            "description": "Wind direction (direction of travel counterclockwise from east)",
+            "unit": "rad"
           },
           {
             "name": "air_pressure",
             "type": "number",
-            "description": "Atmospheric pressure (Pa)."
+            "description": "Atmospheric pressure",
+            "unit": "Pa"
           },
           {
             "name": "precipitation",
             "type": "number",
-            "description": "Total precipitation (m) over the past hour."
+            "description": "Total precipitation over the past hour",
+            "unit": "m"
           }
         ]
       }
@@ -110,43 +120,50 @@
           {
             "name": "t",
             "type": "datetime",
-            "description": "Date and time (UTC).",
-            "format": "YYYY-MM-DD'T'hh:mm'Z'"
+            "description": "Date and time (UTC)",
+            "format": "%Y-%m-%dT%H:%M:%SZ"
           },
           {
             "name": "air_temperature",
             "type": "number",
-            "description": "Air temperature (°C)."
+            "description": "Air temperature",
+            "unit": "°C"
           },
           {
             "name": "dew_point",
             "type": "number",
-            "description": "Dew point temperature (°C)."
+            "description": "Dew point temperature",
+            "unit": "°C"
           },
           {
             "name": "relative_humidity",
             "type": "integer",
-            "description": "Relative humidity (%)."
+            "description": "Relative humidity",
+            "unit": "%"
           },
           {
             "name": "wind_speed",
             "type": "number",
-            "description": "Wind speed (m/s)."
+            "description": "Wind speed",
+            "unit": "m s-1"
           },
           {
             "name": "wind_direction",
             "type": "number",
-            "description": "Wind direction (direction of travel in radians counterclockwise from east)."
+            "description": "Wind direction (direction of travel counterclockwise from east)",
+            "unit": "rad"
           },
           {
             "name": "air_pressure",
             "type": "number",
-            "description": "Atmospheric pressure (Pa)."
+            "description": "Atmospheric pressure",
+            "unit": "Pa"
           },
           {
             "name": "precipitation",
             "type": "number",
-            "description": "Total precipitation (m) over the past hour."
+            "description": "Total precipitation over the past hour",
+            "unit": "m"
           }
         ]
       }
